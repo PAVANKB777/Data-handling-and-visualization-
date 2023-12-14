@@ -1,0 +1,5 @@
+data<-c(10,20,30,40)
+subjects<-c("Maths","English","Science","Social")
+png(file="piechart2.jpg")
+pie(data,subjects,main="subjects distribution",col=rainbow(length(data)))
+dev.off()

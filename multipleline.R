@@ -1,0 +1,8 @@
+a<-c(12,34,67,89,90)
+b<-c(76,45,56,7,89)
+c<-c(96,54,56,77,88)
+png(file="multipleline.jpg")
+plot(a,type="o",col="maroon3",xlab="marks",ylab="semester")
+lines(b,type="o",col="blue2")
+lines(c,type="o",col="green3")
+dev.off()

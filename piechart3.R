@@ -1,0 +1,7 @@
+data<-c(10,20,30,40,55)
+labels<-c("maths","science","social","english","telugu")
+png(file="piechart3.jpg")
+pie_percent<-round(100*data/sum(data),1)
+pie(data,labels = pie_percent,main = "period distribution",col = rainbow(length(data)))
+legend("topright",c(labels),cex=0.9,fill = rainbow(length(data)))
+dev.off()

@@ -1,0 +1,5 @@
+x<-c(10,20,30,40)
+labels<-c("Maths","English","Science","Social")
+png(file="subjects.jpg")
+pie(x,labels)
+dev.off()

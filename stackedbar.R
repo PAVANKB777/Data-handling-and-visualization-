@@ -1,0 +1,8 @@
+library(RColorBrewer)  
+subjects <- c("Maths","English","Science","Social")  
+standard <- c("eighth","ninth","tenth","plusone","plustwo")
+png(file="stackedbar.jpg")
+Values <- matrix(c(76,78,65,78,78,90,89,70,90,65,76,87,90,89,88,77,56,56,54,90),nrow=5,ncol=4,byrow=TRUE)
+barplot(Values, main = "marks over the years", names.arg = subjects, xlab = "subjects", ylab = "marks obtained", col =c("yellow","orange","red","maroon","pink"))  
+legend("topleft", standard, cex = 1.3, fill =c("yellow","orange","red","maroon","pink") )  
+dev.off()

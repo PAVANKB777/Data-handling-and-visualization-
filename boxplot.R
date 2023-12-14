@@ -1,0 +1,5 @@
+v1<-c(1,4,7,8,9,6)
+v2<-c(6,7,9,4,4,0)
+png(file="boxplot.jpg")
+boxplot(v1,v2,xlab="accuracy of svm",ylab="accuracy of knn",main="accuracy evaluation")
+dev.off()
